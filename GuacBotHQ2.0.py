@@ -75,7 +75,7 @@ async def restart(ctx):
     await ctx.send("Restarting!")
     ta.kill()
     r.kill()
-    subprocess.Popen(["python", "GuacBotHQ2.5.py"])
+    subprocess.Popen(["python", "GuacBotHQ2.0.py"])
     quit()
 
 @bot.command()
@@ -117,7 +117,7 @@ async def change_status():
     await bot.change_presence(activity=discord.Game(next(status)))
 
 #Open other GuacBot pieces
-r = subprocess.Popen(["python", "GuacBotReaction3.0.py"])
+r = subprocess.Popen(["python", "GuacBotReaction2.5.py"])
 ta = subprocess.Popen(["python", "GuacBotTerminalAnimation.py"])
 
 #Start bot with token in text file
