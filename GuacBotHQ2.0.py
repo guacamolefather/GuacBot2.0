@@ -117,7 +117,7 @@ async def change_status():
     await bot.change_presence(activity=discord.Game(next(status)))
 
 #Open other GuacBot pieces
-r = subprocess.Popen(["python", "GuacBotReaction2.0.py"])
+r = subprocess.Popen(["python", "GuacBotReaction3.0.py"])
 ta = subprocess.Popen(["python", "GuacBotTerminalAnimation.py"])
 
 #Start bot with token in text file

@@ -136,11 +136,11 @@ class Admin(commands.Cog):
         for permission_name in member_permissions_str:
             fancy_permissions_list = fancy_permissions_list + "- " + permission_name + ": " + member_permissions_bool[i] + "\n"
             i = i + 1
-        forbidden = """()'"""
+        forbidden = "()'"
         for char in fancy_permissions_list: 
             if char in forbidden: 
                 fancy_permissions_list = fancy_permissions_list.replace(char, "")
-        forbidden = """_"""
+        forbidden = "_"
         for char in fancy_permissions_list: 
             if char in forbidden: 
                 fancy_permissions_list = fancy_permissions_list.replace(char, " ")

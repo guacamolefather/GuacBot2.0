@@ -73,7 +73,7 @@ class Utility(commands.Cog):
 
     @commands.command()
     async def reactions(self, ctx):
-        await ctx.send("@thememesareallreal, :ugh: emoji, cake/lie, portal/brain, meaning of life, cum, cry/cries, lemon/cave johnson, gman/freeman/gordon, guess what, yeehaw, hawyee, ^rohan, ily, oregon, alone/lonely, jesus christ, 69, dadbot, fallout, spanish, nazi/zombie, lorax/unless, bee, solaire/sun, benny/vegas, navy, hit or miss, skyrim, tragedy, meow, spiderman/spider man/spider-man, taco, will smith, yeet, shrek, link/zelda, bioshock/obey, i'm (dad joke), lmao/lmfao (alone), what/what? (alone), thank guac, greet (hello) guac, not now guac, piss, (i) love you, micolash/kos/bloodborne, (startswith) hello there, sand")
+        await ctx.send("@thememesareallreal, oui, avocado, :ugh: emoji, cake/lie, portal/brain, meaning of life, cum, cry/cries, lemon/cave johnson, gman/freeman/gordon, guess what, yeehaw, hawyee, ^rohan, ily, oregon, alone/lonely, jesus christ, 69, dadbot, fallout, spanish, nazi/zombie, lorax/unless, bee, solaire/sun, benny/vegas, navy, hit or miss, skyrim, tragedy, meow, spiderman/spider man/spider-man, taco, will smith, yeet, shrek, link/zelda, bioshock/obey, i'm (dad joke), lmao/lmfao (alone), what/what? (alone), thank guac, greet (hello) guac, not now guac, piss, (i) love you, micolash/kos/bloodborne, (startswith) hello there, sand")
 
 def setup(bot):
     bot.add_cog(Utility(bot))
