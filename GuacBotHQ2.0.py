@@ -75,7 +75,7 @@ async def restart(ctx):
     await ctx.send("Restarting!")
     ta.kill()
     r.kill()
-    subprocess.Popen(["python", "GuacBotHQ2.0.py"])
+    subprocess.Popen(["python", "GuacBotHQ2.5.py"])
     quit()
 
 @bot.command()
