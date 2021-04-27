@@ -1,6 +1,7 @@
 import time
 import os
 
+print("Terminal animation activates in 60 seconds.")
 time.sleep(60)
 while 2 == 2:
     t = time.localtime()

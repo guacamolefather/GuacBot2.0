@@ -9,8 +9,7 @@ from discord.ext import commands, tasks
 from itertools import cycle
 
 #Version 2.0 experimental
-bot = commands.Bot(command_prefix = '#',
-                      activity=discord.Game("Only legends see this."))
+bot = commands.Bot(command_prefix = '#', activity=discord.Game("Only legends see this."))
 
 @bot.event
 async def on_ready():
@@ -64,6 +63,7 @@ async def reload_error(ctx, error):
 @commands.check(is_it_me)
 async def die(ctx):
     await ctx.send("Goodbye, father.")
+    await bot.change_presence(activity=discord.Game("Goodbye."))
     ta.kill()
     r.kill()
     os.system('cls')
@@ -89,7 +89,7 @@ async def puppet(ctx):
     if (isDead == None):
         p.kill()
     os.system('cls')
-    #ta = subprocess.Popen(["python", "GuacBotTerminalAnimation.py"])
+    ta.Popen(["python", "GuacBotTerminalAnimation.py"])
 
 #Load cogs
 for filename in os.listdir('./cogs'):

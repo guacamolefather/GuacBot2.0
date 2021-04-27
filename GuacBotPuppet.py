@@ -6,15 +6,20 @@ channel_names = []
 channel_ids = []
 
 def GetChannelList():
+    i = 0
     for guild in client.guilds:
+        print(str(guild))
         for channel in guild.text_channels:
             channel_names.append(channel)
             channel_ids.append(channel.id)
-    for i in channel_names:
-        print(str(channel_names.index(i)) + " - " + str(i) + " - " + str(channel_ids[channel_names.index(i)]))
-    
+            if i > 9:
+                print(str(i) + " - " + str(channel.id) + " - " + str(channel))
+            else:
+                print(" " + str(i) + " - " + str(channel.id) + " - " + str(channel))
+            i = i + 1
+        print("")
+
 def PickServer():
-    server = 30
     server = int(input("Which channel do you want to type in? "))
     channel = client.get_channel(channel_ids[server])
     return channel
